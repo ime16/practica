@@ -1,0 +1,50 @@
+<!DOCTYPE HTML-->
+<html>
+<head>
+
+<link rel="stylesheet" href="css/jquery-ui.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.min.css"/>
+
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+p{ text-align:center;
+}
+</style>
+</head>
+<body>
+
+<div data-role="page" id="principal" data-theme="b" >
+<div data-role="header">
+<p>Páguina Principal</p>
+</div>
+<div data-role="content">
+<p>contenido</p>
+<ul data-role="listview">
+<li><a data-tranition="slideup" href="#segunda">Abrir segunda pagina con slideup</a></li>
+<li><a data-tranition="slidedown" href="#segunda">Abrir segunda pagina con slidedown</a></li>
+<li><a data-tranition="flip" href="#segunda">Abrir segunda pagina con flip</a></li>
+<li><a data-tranition="pop" href="#segunda">Abrir segunda pagina con pop</a></li>
+<li><a data-tranition="fade" href="#segunda">Abrir segunda pagina con fade</a></li>
+</ul>
+</div>
+<div data-role="footer">
+<p>Pie de Páguina</p>
+</div>
+</div>
+
+<div data-role="page" id="segunda" data-theme="b" >
+<div data-role="header">
+<p><a data-role="button" href="#principal" >Regresar</a>Páguina Secundaria</p>
+</div>
+<div data-role="content">
+<p>contenido</p>
+</div>
+<div data-role="footer">
+<p>Pie de Páguina</p>
+</div>
+</div>
+</body>
+</html>
